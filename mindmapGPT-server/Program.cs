@@ -30,7 +30,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
     {
-        builder.WithOrigins("http://mindmapgpt.space") // Thay thế bằng domain của frontend
+        builder.WithOrigins("https://mindmapgpt.space") // Thay thế bằng domain của frontend
                .AllowAnyMethod()
                .AllowAnyHeader()
                .AllowCredentials(); // Quan trọng: Cho phép gửi credentials
